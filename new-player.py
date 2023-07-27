@@ -15,6 +15,4 @@ def main(film):
             scr =  "\033c" + ''.join([ F.readline() for _ in range(13) ])
             print(scr, end='')
 
-
-if __name__ == '__main__':
     main("star-wars.ascii")
