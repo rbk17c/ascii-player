@@ -20,7 +20,7 @@ def Decode_page(page):
                     m2=m2_pattern.split(lin2)
                     if m2:
                         lin3=m2[2]+'n'
-                        lin4=lin3.replace('\\n', '\n').replace("\\'", "'")
+                        lin4=lin3.replace('\\n', '\n').replace("\\'", "'").replace("\\\\", "\\")
                         return (lin4)
     return '-'
 
